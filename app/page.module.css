@@ -14,7 +14,7 @@
   justify-content: inherit;
   width: 100%;
   max-width: var(--max-width);
-  font-family: var(--font-mono);
+  font-family: var(--font-noto-sans);
   font-size: 0.85rem;
 }
 
@@ -35,7 +35,7 @@
 }
 
 .code {
-  font-family: var(--font-mono);
+  font-family: var(--font-noto-sans);
   font-weight: 700;
 }
 
@@ -102,7 +102,7 @@
 .center::after {
   position: absolute;
   left: 50%;
-  content: "";
+  content: '';
   transform: translateZ(0);
   filter: blur(45px);
 }
