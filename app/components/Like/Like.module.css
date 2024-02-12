@@ -1,0 +1,17 @@
+.like {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ghost,
+.ghost svg {
+  color: var(--grey-80);
+  stroke: var(--grey-80);
+}
+
+.blue,
+.blue svg {
+  color: var(--blue);
+  stroke: var(--blue);
+}
