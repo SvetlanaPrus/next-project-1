@@ -16,14 +16,22 @@ export const Card = ({
   paragraph,
   readDuration,
   link,
-  children,
+  // children,
   className,
   ...props
 }: CardProps): JSX.Element => {
   return (
     <div className={cn(styles.card, className)} {...props}>
       <div className={cn(styles.picture, className)} {...props}>
-        <Image src={`/smallCardImage.png`} alt={''} width="300" height="192" />
+        <Image
+          src={`/smallCardImage.png`}
+          alt={''}
+          width="300"
+          height="192"
+          // When true, the image will be considered high priority and preload.
+          // Lazy loading is automatically disabled for images using priority.
+          priority={true}
+        />
       </div>
 
       <div>
@@ -61,7 +69,7 @@ export const Card = ({
           <ArrowRightIcon />
         </Tag>
       </div>
-      {children}
+      {/* {children} */}
     </div>
   );
 };

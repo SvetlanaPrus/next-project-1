@@ -2,11 +2,11 @@ import { DetailedHTMLProps, HTMLAttributes, ReactNode } from 'react';
 
 export interface CardProps
   extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {
-  children: ReactNode;
+  // children: ReactNode;
   name?: ReactNode;
   lastLikeDuration?: ReactNode;
   numberLikes?: ReactNode;
-  like?: boolean;
+  like?: string;
   header?: ReactNode;
   paragraph?: ReactNode;
   readDuration?: ReactNode;

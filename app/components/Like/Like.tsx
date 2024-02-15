@@ -5,7 +5,7 @@ import LikeIcon from './like.svg';
 
 export const Like = ({
   numberLikes = 0,
-  like,
+  like = 'no',
   className,
   ...props
 }: LikeProps): JSX.Element => {
@@ -13,8 +13,8 @@ export const Like = ({
     <div {...props}>
       <span
         className={cn(styles.like, className, {
-          [styles.ghost]: like == false,
-          [styles.blue]: like == true,
+          [styles.ghost]: like == 'no',
+          [styles.blue]: like == 'yes',
         })}
       >
         {numberLikes}

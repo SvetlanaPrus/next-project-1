@@ -1,0 +1,11 @@
+.sidebar {
+  padding-left: 10px;
+  background: var(--grey-df);
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar a {
+  margin: 5px 5px 5px 0;
+  cursor: pointer;
+}

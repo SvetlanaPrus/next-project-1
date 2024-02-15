@@ -1,0 +1,21 @@
+.top {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--green-light);
+  padding: 23px 10px;
+}
+
+.name {
+  display: flex;
+  align-items: center;
+}
+
+.gitIcon svg {
+  stroke: var(--black-light);
+  display: flex;
+  align-items: center;
+}
+
+.gitIcon:hover {
+  cursor: pointer;
+}

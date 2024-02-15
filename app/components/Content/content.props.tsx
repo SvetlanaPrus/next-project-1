@@ -1,7 +1,6 @@
 import { DetailedHTMLProps, HTMLAttributes, ReactNode } from 'react';
 
-export interface LikeProps
+export interface ContentProps
   extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {
-  numberLikes?: ReactNode;
-  like?: string;
+  children: ReactNode;
 }
