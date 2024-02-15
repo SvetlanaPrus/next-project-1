@@ -1,0 +1,45 @@
+.container {
+  display: grid;
+  gap: 10px;
+
+  /* Определяем количество колонок и именуем разделительные линии  */
+  grid-template-columns: [start] 1fr [sidebar] 1fr 1fr [end];
+  grid-template-areas:
+    'header header header'
+    'sidebar body body'
+    'footer footer footer';
+}
+
+.header {
+  grid-area: header;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.body {
+  grid-area: body;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+@media (width <= 600px) {
+  .container {
+    /* Переопределили в одну колонку  */
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    /* Берем 1 раз, так как одна колонка  */
+      'header'
+      'sidebar'
+      'body'
+      'footer';
+  }
+}
+
+.about {
+  background: var(--grey-df);
+  color: black;
+}
